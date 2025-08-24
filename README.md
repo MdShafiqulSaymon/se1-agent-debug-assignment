@@ -158,7 +158,7 @@ Type 'history' to see conversation history
 ### Prerequisites
 - Python 3.10+
 - Google Gemini API key
-- Optional: OpenWeatherMap API key (for weather tool)
+- OpenWeatherMap API key (for weather tool)
 
 ### Installation
 ```bash
@@ -278,7 +278,7 @@ response = llm.answer("Use your tool with test input")
 ```
 
 ## System Benefits
-
+- **Plug-and-Play Architecture**: Tools are completely independent modules - add, remove, or modify any tool without touching existing code
 - **Type Safety**: Full type hints and schema validation
 - **Error Resilience**: Comprehensive error handling at all levels  
 - **Zero Dependencies**: Tools are completely independent
