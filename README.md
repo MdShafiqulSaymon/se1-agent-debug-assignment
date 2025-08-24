@@ -203,13 +203,14 @@ python main.py "What's the weather in London?"
 
 ### Testing
 ```bash
-# Run all tests
-pytest
+# Using Makefile (recommended)
+make test                    # Run both integration and tool tests
+make test-integration        # Full system integration (requires API quota)
+make test-tools             # Direct tool testing (no API needed)
 
-# Run specific test categories
-pytest tests/test_robust.py -v      # Tool functionality without API
-pytest tests/test_real_tools.py -v  # Direct tool testing
-pytest tests/test_integration.py -v # Full system integration (requires API quota)
+# Or run directly with pytest
+pytest tests/test_integration.py -v  # Full system integration
+pytest tests/test_real_tools.py -v   # Direct tool testing
 ```
 
 ## Available Tools
